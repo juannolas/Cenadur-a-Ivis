@@ -1,0 +1,172 @@
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    color: #333333;
+    margin: 0;
+    background: #fdfaf2; /* Fondo crema claro del logo */
+}
+
+/* Encabezado */
+header {
+    background: #ffffff; 
+    padding: 20px;
+    border-bottom: 4px solid #e91e63; /* Fucsia principal del logo */
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    color: #2e1a47; /* Morado oscuro de "Cenaduria" */
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+}
+
+header h1 img {
+    height: 110px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 3px solid #e91e63;
+    background: #ffffff;
+    padding: 5px;
+}
+
+/* Navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #e91e63; /* Fucsia vibrante */
+    padding: 12px;
+    gap: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background: #ff9800; /* Naranja del logo al pasar el mouse */
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Contenedor principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.banner {
+    text-align: justify;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    border: 2px solid #f1f1f1;
+}
+
+.banner h2 {
+    color: #e91e63; /* Fucsia del logo */
+    text-align: center;
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444444;
+}
+
+/* Grid para valores, objetivos y productos */
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 25px 0;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-radius: 28px;
+    transition: all 0.3s ease;
+    border-top: 5px solid #008080; /* Verde azulado del plato/logo */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(233, 30, 99, 0.2);
+}
+
+.card h3 {
+    color: #008080; /* Verde azulado */
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.card img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #ffc107; /* Amarillo del logo */
+}
+
+/* Botones */
+.btn {
+    background: #ff9800; /* Naranja */
+    border: none;
+    padding: 14px 30px;
+    margin: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 40px;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #e65100; /* Naranja más fuerte */
+    transform: translateY(-2px);
+}
+
+/* Pie de página */
+footer {
+    background: #2e1a47; /* Morado oscuro del texto del logo */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    font-size: 15px;
+    border-top: 5px solid #ffc107; /* Borde amarillo */
+}
+
+footer a {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+        flex-direction: column;
+    }
+    
+    header h1 img {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+}
